@@ -1,0 +1,47 @@
+<template>
+  <div class="app">
+      <div class="sale">热销商品</div>
+      <div>
+          <div></div>
+          <div></div>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: '',
+  props:{
+    floor4:{
+      type:Array,
+      required:true
+    }
+  },
+  data () {
+    return {
+    }
+  },
+  components: {},
+  methods: {},
+  mounted() {
+    console.log(this.floor4);
+  },
+  computed: {},
+  watch: {}
+}
+</script>
+
+<style lang='scss' scoped>
+.app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ededed;
+    height: 300px;
+}
+.sale{
+    margin: 10px 0;
+    font-size: 17px;
+    color: red;
+}
+</style>

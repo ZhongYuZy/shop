@@ -1,0 +1,31 @@
+<template>
+  <div>
+    <van-swipe :autoplay="3000">
+      <van-swipe-item v-for="(item, index) in list" :key="">
+        <img v-lazy="list" />
+      </van-swipe-item>
+    </van-swipe>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "",
+  props: {},
+  data() {
+    return {
+        list:[
+            require=true,
+        ]
+    };
+  },
+  components: {},
+  methods: {},
+  mounted() {},
+  computed: {},
+  watch: {},
+};
+</script>
+
+<style lang='scss' scoped>
+</style>
